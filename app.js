@@ -42,12 +42,42 @@
 
 // Проект: Управление Массивом
 
-const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+// const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
 
-theList.pop(); // Удаление первого элемента массива
-theList.shift(); // Удаление последнего элемента массива
-theList.unshift("First"); // Добавление значения в начало массива
-theList[3] = "helloWorld"; // Присвоение значения 4 элементу
-theList[2] = "MIDDLE"; // Присвоение значения элементу с третьим индексом
-theList.push("LAST"); // Добавление значения в конец массива
-console.log(theList);
+// theList.pop(); // Удаление первого элемента массива
+// theList.shift(); // Удаление последнего элемента массива
+// theList.unshift("First"); // Добавление значения в начало массива
+// theList[3] = "helloWorld"; // Присвоение значения 4 элементу
+// theList[2] = "MIDDLE"; // Присвоение значения элементу с третьим индексом
+// theList.push("LAST"); // Добавление значения в конец массива
+// console.log(theList);
+
+//----------------------------------------------------------------------------------------------------------------
+
+// Проект: Каталог продукции компании
+
+const inventory = []; // Массив для хранения перечня товаров магазина
+
+const item3 = {
+    name: "MacBook",
+    model: "Air",
+    cost: 700,
+    qty: 10
+};
+
+const item2 = {
+    name: "Iphone",
+    model: "ProMax",
+    cost: 500,
+    qty: 5
+};
+
+const item1 = {
+    name: "Ipad",
+    model: "Mini",
+    cost: 600,
+    qty:3
+};
+
+inventory.push(item1, item2, item3);
+console.log(inventory[2].qty);
