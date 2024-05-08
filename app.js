@@ -86,22 +86,45 @@
 
 // 4.4 Ex - Магический шар судьбы
 
-let randomNumber = Math.floor(Math.random() * 6);
-let userAsk = prompt("You ask?");
+// let randomNumber = Math.floor(Math.random() * 6);
+// let userAsk = prompt("You ask?");
+// let message;
+
+// switch(randomNumber) {
+//     case 0 :
+//     case 1 :
+//     case 2 :
+//         message = `${userAsk}` + " \nДа это стоит того!";
+//     break;
+
+//     case 3 :
+//     case 4 :
+//     case 5 :
+//         message = `${userAsk}` + " \nНет это не стоит того!";
+//     break;
+// };
+
+// console.log(message);
+
+//----------------------------------------------------------------------------------------------------------------
+
+//  4.5 Ex
+
+let prize = Number(prompt("Введите число от 0 до 10"));
 let message;
+let gift;
 
-switch(randomNumber) {
+switch(prize) {
     case 0 :
-    case 1 :
-    case 2 :
-        message = `${userAsk}` + " \nДа это стоит того!";
-    break;
-
     case 3 :
-    case 4 :
-    case 5 :
-        message = `${userAsk}` + " \nНет это не стоит того!";
+        gift = "You win Gold Coin";
+        message = alert("My Selection: " + `${gift}`);
     break;
-}
-
-console.log(message);
+    case 2 :
+    case 7 :
+        gift = "You win Silver Coin";
+        message = alert("My Selection: " + `${gift}`);
+    break;
+    default :
+        message = alert("You Loses!");
+};
