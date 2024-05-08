@@ -56,28 +56,52 @@
 
 // Проект: Каталог продукции компании
 
-const inventory = []; // Массив для хранения перечня товаров магазина
+// const inventory = []; // Массив для хранения перечня товаров магазина
 
-const item3 = {
-    name: "MacBook",
-    model: "Air",
-    cost: 700,
-    qty: 10
-};
+// const item3 = {
+//     name: "MacBook",
+//     model: "Air",
+//     cost: 700,
+//     qty: 10
+// };
 
-const item2 = {
-    name: "Iphone",
-    model: "ProMax",
-    cost: 500,
-    qty: 5
-};
+// const item2 = {
+//     name: "Iphone",
+//     model: "ProMax",
+//     cost: 500,
+//     qty: 5
+// };
 
-const item1 = {
-    name: "Ipad",
-    model: "Mini",
-    cost: 600,
-    qty:3
-};
+// const item1 = {
+//     name: "Ipad",
+//     model: "Mini",
+//     cost: 600,
+//     qty:3
+// };
 
-inventory.push(item1, item2, item3);
-console.log(inventory[2].qty);
+// inventory.push(item1, item2, item3);
+// console.log(inventory[2].qty);
+
+//----------------------------------------------------------------------------------------------------------------
+
+// 4.4 Ex - Магический шар судьбы
+
+let randomNumber = Math.floor(Math.random() * 6);
+let userAsk = prompt("You ask?");
+let message;
+
+switch(randomNumber) {
+    case 0 :
+    case 1 :
+    case 2 :
+        message = `${userAsk}` + " \nДа это стоит того!";
+    break;
+
+    case 3 :
+    case 4 :
+    case 5 :
+        message = `${userAsk}` + " \nНет это не стоит того!";
+    break;
+}
+
+console.log(message);
