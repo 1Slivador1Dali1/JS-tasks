@@ -102,7 +102,7 @@
 //     case 5 :
 //         message = `${userAsk}` + " \nНет это не стоит того!";
 //     break;
-// };
+// }
 
 // console.log(message);
 
@@ -110,21 +110,43 @@
 
 //  4.5 Ex
 
-let prize = Number(prompt("Введите число от 0 до 10"));
-let message;
-let gift;
+// let prize = Number(prompt("Введите число от 0 до 10"));
+// let message;
+// let gift;
 
-switch(prize) {
-    case 0 :
-    case 3 :
-        gift = "You win Gold Coin";
-        message = alert("My Selection: " + `${gift}`);
-    break;
-    case 2 :
-    case 7 :
-        gift = "You win Silver Coin";
-        message = alert("My Selection: " + `${gift}`);
-    break;
-    default :
-        message = alert("You Loses!");
-};
+// switch(prize) {
+//     case 0 :
+//     case 3 :
+//         gift = "You win Gold Coin";
+//         message = alert("My Selection: " + `${gift}`);
+//     break;
+//     case 2 :
+//     case 7 :
+//         gift = "You win Silver Coin";
+//         message = alert("My Selection: " + `${gift}`);
+//     break;
+//     default :
+//         message = alert("You Loses!");
+// }
+
+//----------------------------------------------------------------------------------------------------------------
+
+// Проект: Игра в рулетку
+
+let val = Number(prompt("Что за число?"))
+let num = 100;
+let message;
+
+if(val > num){
+    message = val + " больше " + num;
+}
+else if(val === num){
+    message = val + " и " + num + " равны";
+}
+else {
+    message = val + " меньше " + num;
+}
+
+console.log(message);
+
+//----------------------------------------------------------------------------------------------------------------
