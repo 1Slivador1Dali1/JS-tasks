@@ -133,18 +133,36 @@
 
 // Проект: Игра в рулетку
 
-let val = Number(prompt("Что за число?"))
-let num = 100;
+// let val = Number(prompt("Что за число?"))
+// let num = 100;
+// let message;
+
+// if(val > num){
+//     message = val + " больше " + num;
+// }
+// else if(val === num){
+//     message = val + " и " + num + " равны";
+// }
+// else {
+//     message = val + " меньше " + num;
+// }
+
+// console.log(message);
+
+//----------------------------------------------------------------------------------------------------------------
+
+// Проект: Проверь друга
+
+let person = prompt("Введите имя друга");
 let message;
 
-if(val > num){
-    message = val + " больше " + num;
-}
-else if(val === num){
-    message = val + " и " + num + " равны";
-}
-else {
-    message = val + " меньше " + num;
+switch(person){
+    case "Кирилл":
+    case "Влад":
+        message = person + " ваш друг";
+    break;
+    default:
+        message = person + " не ваш друг";
 }
 
 console.log(message);
