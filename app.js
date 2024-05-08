@@ -153,18 +153,47 @@
 
 // Проект: Проверь друга
 
-let person = prompt("Введите имя друга");
-let message;
+// let person = prompt("Введите имя друга");
+// let message;
 
-switch(person){
-    case "Кирилл":
-    case "Влад":
-        message = person + " ваш друг";
-    break;
-    default:
-        message = person + " не ваш друг";
+// switch(person){
+//     case "Кирилл":
+//     case "Влад":
+//         message = person + " ваш друг";
+//     break;
+//     default:
+//         message = person + " не ваш друг";
+// }
+
+// console.log(message);
+
+//----------------------------------------------------------------------------------------------------------------
+
+// Проект: камень-ножницы-бумага
+
+const myArr = ["Камень", "Бумага", "Ножницы"];
+let computer = Math.floor(Math.random() * 3);
+let people = Math.floor(Math.random() * 3);
+let message = "Игрок: " + myArr[people] + " VS Компьютер: " + myArr[computer];
+
+if(people === computer){
+    message += " \nНичья!";
+}
+else if(people > computer) {
+    if(computer === 0 && people === 2){
+        message += " \n Компьтер Выиграл!";
+    }
+    else {
+        message += " \nВыишрал Игрок!";
+    }
+}
+else {
+    if(computer === 2 && people === 0) {
+        message += " \nВыиграл Игрок!";
+    }
+    else {
+        message += " \n Компьтер Выиграл!";
+    }
 }
 
 console.log(message);
-
-//----------------------------------------------------------------------------------------------------------------
